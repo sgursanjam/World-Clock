@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+   
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Website Menu #3</title>
+  </head>
+  <body>
+
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">GURUJI</a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active"><a href="index.html"><span>Home</span></a></li>
+                <li class="has-children">
+                  <a href="about.html"><span>Dropdown</span></a>
+                  <ul class="dropdown arrow-top">
+                    <li><a href="#">Menu One</a></li>
+                    <li><a href="#">Menu Two</a></li>
+                    <li><a href="#">Menu Three</a></li>
+                    <li><a href="#">Dropdown</a></li>
+                      
+                  </ul>
+                </li>
+                <li><a href=""><span>Listings</span></a></li>
+                <li><a href=""><span>About</span></a></li>
+                <li><a href=""><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="hero" style="background-image: url('images/i1.jpg');">
+    <!-- <div class="d1" style="display: flex;position: absolute;top: 25%;left: 25%; width: 63vw;height:72vh; border-radius: 40px; background-color: black;"> 
+      
+</div> -->
+<div class="jumbotron"
+        style="background-color:black; color: white; border-radius: 40px; position: absolute; top: 23%;left: 20%; width: 70vw; ">
+        <h2 class="display-4"> Current Location is:&nbsp;&nbsp;&nbsp;<span id="loc" style="font-size: 40px;"></span> </h2>
+        <h2 class="display-4">Current time Is:&nbsp;&nbsp;<span id="worldclock" style="font-size: 40px;"></span></h2>
+        <h2 class="display-4">Current Date Is:&nbsp;&nbsp;<span id="dd" style="font-size: 40px;"></span></h2>
+
+        <p style="margin-top: 20px;">Please Select a Country</p>
+        <table border="0" cellspacing="0" cellpadding="3" style="table-layout: fixed;">
+            <form name="where">
+                <tr>
+                    <td>
+                        <select id="city" name="city" size="1" onchange="updateclock(this)" style="height: 40px;">
+                            <option value="0" selected>India</option>
+                            <option value="4.30"> Afghanistan</option>
+                            <option value="1.0">Albania</option>
+                            <option value="1.0">Algeria</option>
+                            <option value="-11.0"> American Samoa</option>
+                            <option value="1.0"> Angola</option>
+                            <option value="-4.0"> Anguilla</option>
+                            <option value="-4.0"> Antigua and Barbuda</option>
+                            <option value="-3.0"> Argentina</option>
+                            <option value="4.0">Armenia</option>
+                            <option value="-4"> Aruba</option>
+                            <option value="8.0"> Western Australia </option>
+                            <option value="9.3"> South Australia</option>
+                            <option value="9.3"> Northern Territory</option>
+                            <option value="10.0">New South Wales (NSW)</option>
+                            <option value="10.0">Tasmania(TAS),Victoria(VIC)</option>
+                            <option value="10.0">Queensland(QLD)</option>
+                            <option value="10.3">Lord Howe Island</option>
+                            <option value="11.0"> Macquarie Island(Tasmania)</option>
+                            <option value="1.0"> Austria</option>
+                            <option value="4.0"> Azerbaijan</option>
+                            <option value="-5.0"> Bahamas</option>
+                            <option value="3.0"> Bahrain</option>
+                            <option value="6.0">Bangladesh</option>
+                            <option value="-4.0">Barbados</option>
+                            <option value="3.0">Belarus</option>
+                            <option value="1.0">Belgium</option>
+                            <option value="-6">Belize</option>
+                            <option value="1.0">Benin</option>
+                            <option value="-4.0">Bermuda</option>
+                            <option value="6.0">Bhutan</option>
+                            <option value="-4.0">Bolivia</option>
+                            <option value="1.0">Bosnia and Herzegovina</option>
+                            <option value="2.0">Botswana</option>
+                            <option value="-5.0">Acre,Southwest Amazonas</option>
+                            <option value="-4.0">Most of Amazonas</option>
+                            <option value="-4.0">Mato Grosso do Sul</option>
+                            <option value="-4.0">Virgin Islands</option>
+                            <option value="8.0">Brunei</option>
+                            <option value="2.0">Bulgaria</option>
+                            <option value="0.0">Burkina Faso</option>
+                            <option value="2.0">Burundi</option>
+                            <option value="7.0">Cambodia</option>
+                            <option value="1.0">Cameroon</option>
+                            <option value="-7.0">Canada-alberta</option>
+                            <option value="-7.0">Canada-peace river distt.</option>
+                            <option value="-8.0"> Canada-Vancouver</option>
+                            <option value="-5.0"> Canada-Ontario</option>
+                            <option value="-5.0">Cayman Islands</option>
+                            <option value="1.0">Central African Republic</option>
+                            <option value="1.0">Chad</option>
+                            <option value="-4.0">Chile,main territory</option>
+                            <option value="8.0">China</option>
+                            <option value="7.0">Christmas Island</option>
+                            <option value="6.3">Cocos (Keeling) Islands</option>
+                            <option value="-5.0">Colombia</option>
+                            <option value="1.0">Congo</option>
+                            <option value="2.0"> Cyprus</option>
+                            <option value="1.0">Denmark</option>
+                            <option value="-5">Ecuador</option>
+                            <option value="-6.0">El Salvador</option>
+                            <option value="3.0">Eritrea</option>
+                            <option value="0.0">Faroe Islands</option>
+                            <option value="2.0">Finland</option>
+                            <option value="-3.0">French Guiana</option>
+                            <option value="-10.0">Southern Antarctic Lands</option>
+                            <option value="0.0"> Gambia</option>
+                            <option value="1.0">Germany</option>
+                            <option value="1.0">Gibraltar</option>
+                            <option value="2.0"> Greece</option>
+                            <option value="-4.0">Grenada</option>
+                            <option value="10.0"> Guam</option>
+                            <option value="0.0"> Guernsey</option>
+                            <option value="0.0">Guinea-Bissau</option>
+                            <option value="-5.0"> Haiti</option>
+                            <option value="1.0"> Holy See(Vatican City)</option>
+                            <option value="8.0"> Hong Kong</option>
+                            <option value="1.0"> Hungary</option>
+                            <option value="5.3"> India</option>
+                            <option value="3.3"> Iran</option>
+                            <option value="0.0"> Ireland</option>
+                            <option value="1.0"> Italy</option>
+                            <option value="2.0"> Israel</option>
+                            <option value="-5.0"> Jamaica</option>
+                            <option value="9.0"> Japan</option>
+                            <option value="3.0">Kenya</option>
+                            <option value="9.0">Korea North</option>
+                            <option value="3.3"> Kuwait</option>
+                            <option value="7.0">Laos</option>
+                            <option value="2.0"> Lesotho</option>
+                            <option value="2.0">Libya</option>
+                            <option value="1.0"> Luxembourg</option>
+                            <option value="5.0">Maldives</option>
+                            <option value="1.0"> Malta</option>
+                            <option value="">Martinique</option>
+                            <option value="4.0"> Mauritius</option>
+                            <option value="-6.0"> Mexico</option>
+                            <option value="7.0"> Mongolia</option>
+                            <option value="1.0"> Morocco</option>
+                            <option value="12.0"> Nauru</option>
+                            <option value="1.0"> Netherlands</option>
+                            <option value="11.0"> New Caledonia</option>
+                            <option value="-6.0"> Nicaragua</option>
+                            <option value="1.0">Nigeria</option>
+                            <option value="11.0"> Norfolk Island</option>
+                            <option value="1.0"> Norway</option>
+                            <option value="-11.0"> New Zealand</option>
+                            <option value="5.0"> Pakistan</option>
+                            <option value="-5.0">Panama</option>
+                            <option value="-4.0"> Paraguay</option>
+                            <option value="8.0"> Philippines
+                            <option value="1.0"> Poland</option>
+                            <option value="-4.0"> Puerto Rico</option>
+                            <option value="4.0"> Reunion(France)</option>
+                            <option value="3.0"> Russia-Anapa.Armavir </option>
+                            <option value="3.0"> Kaluga,Korolyov,Murmansk</option>
+                            <option value="0.0">Saint Helena</option>
+                            <option value="-4.0">Saint Lucia</option>
+                            <option value="-4.0">Saint Vincent</option>
+                            <option value="1.0">San Marino</option>
+                            <option value="3.0">Saudi Arabia</option>
+                            <option value="0.0">Senegal</option>
+                            <option value="0.0">Sierra Leone</option>
+                            <option value="1.0">Slovakia</option>
+                            <option value="11.0">Solomon Islands</option>
+                            <option value="2.0"> South Africa</option>
+                            <option value="1.0">Spain</option>
+                            <option value="5.3">Sri Lanka</option>
+                            <option value="-3.3"> Suriname</option>
+                            <option value="1.0"> Switzerland</option>
+                            <option value="5.0"> Tajikistan</option>
+                            <option value="7.0"> Thailand</option>
+                            <option value="0.0"> Toga</option>
+                            <option value="-4.0"> Trinidad</option>
+                            <option value="3.0"> Turkey</option>
+                            <option value="12.0"> Tuvalu</option>
+                            <option value="2.0"> Ukraine</option>
+                            <option value="0.0">United Kingdom</option>
+                            <option value="-5.0"> USA </option>
+                            <option value="5.0"> Uzbekistan</option>
+                            <option value="11.0"> Vanuatu</option>
+                            <option value="7.0"> Vietnam</option>
+                            <option value="3.0"> Yemen</option>
+                            <option value="2.0"> Zambia</option>
+                            <option value="2.0"> Zimbabwe</option>
+
+                        </select>
+                        <ilayer id="worldclockns" height=35>
+                            <layer id="worldclockns2" height=35 left=0 top=0 style="font:bold 16px Arial;">
+                            </layer>
+                        </ilayer>
+                    </td>
+                </tr>
+
+                <td>
+                </td>
+            </form>
+        </table>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
