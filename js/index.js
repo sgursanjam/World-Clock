@@ -17,34 +17,21 @@
             
          now=new Date();
            
-        ofst=now.getTimezoneOffset()/60;
-        secs=now.getSeconds();
-        sec=-1.575+Math.PI*secs/30;
-        mins=now.getMinutes();
-        min=-1.575+Math.PI*mins/30;
-        
-        hr=(isitlocal)?now.getHours():(now.getHours() + parseInt(ofst)) + parseInt(zone);
-        hrs=-1.575+Math.PI*hr/6+Math.PI*parseInt(now.getMinutes())/360;
-        if (hr < 0) hr+=24;
-        if (hr > 23) hr-=24;
-        ampm = (hr > 11)?"PM":"AM";
-        statusampm = ampm.toLowerCase();
-        
-        hr2 = hr;
-        if (hr2 == 0) hr2=12;
-        (hr2 < 13)?hr2:hr2 %= 12;
-        if (hr2<10) hr2="0"+hr2
-        
-        var finaltime=hr2+':'+((mins < 10)?"0"+mins:mins)+':'+((secs < 10)?"0"+secs:secs)+' '+statusampm;
-        
+        ofst=now.getTimezoneOffset()*60000;
+        utc=ofst+now.getTime();
+        f= utc+(zone*3600000);
+        l=now.toLocaleTimeString();
+        nd= new Date(f);
+         b=nd.toLocaleTimeString();
+         j=(isitlocal)?l:b;
         if (document.all)
-        worldclock.innerHTML=finaltime
+        worldclock.innerHTML=j
         else if (document.getElementById)
-        document.getElementById("worldclock").innerHTML=finaltime
+        document.getElementById("worldclock").innerHTML=j
         else if (document.layers){
-        document.worldclockns.document.worldclockns2.document.write(finaltime)
+        document.worldclockns.document.worldclockns2.document.write(j)
         document.worldclockns.document.worldclockns2.document.close()
-        document.worldclockns.document.worldclockns2.document.write(finaltime)
+        document.worldclockns.document.worldclockns2.document.write(j)
         
                
         }
@@ -58,7 +45,7 @@
     
         zone=z.options[z.selectedIndex].value;
         }
-        //  console.log(calc(zone*1.037735849));
+      
        
          document.getElementById("dd").innerHTML=calc(zone*1.037735849);
         setTimeout('WorldClock()',1000);
