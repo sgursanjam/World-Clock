@@ -19,6 +19,20 @@
 
     <title>World Clock By Guruji</title>
   </head>
+  <style>
+    @media(max-width:707px) {
+      .display-4{
+        font-size: 25px;
+      }
+      #loc{
+        font-size: 25px;
+      }
+      #dd{
+        font-size: 25px;
+      }
+    
+    }
+  </style>
   <body>
 
 
@@ -73,11 +87,9 @@
     </header>
 
     <div class="hero" style="background-image: url('images/i1.jpg');">
-    <!-- <div class="d1" style="display: flex;position: absolute;top: 25%;left: 25%; width: 63vw;height:72vh; border-radius: 40px; background-color: black;"> 
-      
-</div> -->
+    
 <div class="jumbotron"
-        style="background-color:black; color: white; border-radius: 40px; position: absolute; top: 23%;left: 20%; width: 75vw; ">
+        style="background-color:black; color: white; border-radius: 40px; position: absolute; top: 23%;left: 15vw; width: 75vw; ">
         <h2 class="display-4"> Current Location is:<span id="loc" style="font-size: 40px;"></span> </h2>
         <h2 class="display-4">Current time Is:<span id="worldclock" style="font-size: 40px;"></span></h2>
         <h2 class="display-4">Current Date Is:<span id="dd" style="font-size: 40px;"></span></h2>
